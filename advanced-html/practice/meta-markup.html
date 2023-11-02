@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meta markup</title>
+
+    <!-- Open Graph markup -->
+    <meta property="og:url" content="https://developer.mozilla.org">
+    <meta property="og:title" content="MDN Web Docs">
+    <meta property="og:locale" content="en-US">
+    <meta property="og:description" content="The MDN Web Docs site provides information about Open Web technologies including HTML, CSS, and APIs for both Web sites and progressive web apps.">
+    <meta property="og:image" content="https://developer.mozilla.org/mdn-social-share.cd6c4a5a.png">
+</head>
+<body>
+
+    <!-- Schema.org markup -->
+    <section itemscope itemtype="http://schema.org/Product">
+        <h1 itemprop="name">наименование_товара</h1>
+        <a href="ссылка-на-увеличенное-изображение.jpg">
+            <img itemprop="image" src="ссылка_на_изображение_товара" />
+        </a>
+        <div itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+            <meta itemprop="price" content="690.00">
+            <meta itemprop="priceCurrency" content="RUB">
+            <link itemprop="availability" href="http://schema.org/InStock">
+            <p>В наличии</p>
+        </div>
+        <p itemprop="description">описание_товара</p>
+    </section>
+
+    <address itemscope itemtype="http://schema.org/Organization">
+        <p itemprop="name">название_компании</p>
+        <link itemprop="url" href="ссылка_на_сайт">
+        <p itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+            <span itemprop="postalCode">почтовый_индекс</span>,
+            <span itemprop="addressCountry">Страна</span>,
+            <span itemprop="addressRegion">Область</span>,
+            <span itemprop="addressLocality">Город</span>,
+            <span itemprop="streetAddress">улица, номер_дома</span>
+        </p>
+        <p>Телефон: <a itemprop="telephone" href="tel:+79999999999">+7 (999) 999-99-99</a></p>
+        <p>Почта: <a itemprop="email" href="mailto:email@email.ru">email@email.ru</a></p>
+        <p>Факс: <a itemprop="faxNumber" href="tel:+79999999999">+7 (999) 999-99-99</a></p>
+ </address>
+</body>
+</html>

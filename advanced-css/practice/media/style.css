@@ -1,0 +1,50 @@
+:root {
+	--body-color: #000000;
+	--body-background: #ffffff;
+}
+
+body {
+	color: var(--body-color);
+	background:  var(--body-background);
+}
+
+@media (prefers-color-scheme: dark) {
+	/* При выбранной темной схеме фон сайта будет черный, цвет текста белый */
+	:root {
+		--body-color: #ffffff;
+		--body-background: #000000;
+	}
+}
+
+
+@media (orientation: landscape) {
+	/* При горизонтальной ориентации фон сайта будет белый, цвет текста черный */
+	body {
+		color: #000000;
+		background: #ffffff;
+	}
+}
+
+
+@media (orientation: portrait) {
+	/* При вертикальной ориентации фон сайта будет черный, цвет текста белый*/
+	body {
+		color: #ffffff;
+		background: #000000;
+	}
+}
+
+
+/* Стили для устройств с viewport больше 1400 пикселей. */
+
+@media (max-width: 1400px) {
+	/*	Стили для устройств, у которых ширина viewport меньше или равно 1400 пикселей	*/
+}
+
+@media (max-width: 992px) {
+	/* Стили для устройств, у которых ширина viewport меньше или равно 990 пикселей */
+}
+
+@media (max-width: 768px) {
+	/* Стили для устройств, у которых ширина viewport меньше или равно 770 пикселей */
+}

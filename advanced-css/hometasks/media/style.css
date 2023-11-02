@@ -1,0 +1,47 @@
+:root {
+    --body-bg: #fff;
+    --body-color: #333;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 20px;
+    font-family: sans-serif;
+    background-color: var(--body-bg);
+    color: var(--body-color);
+}
+
+.cats {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.cats__item {
+    background: var(--body-color);
+    border-radius: 5px;
+    color: var(--body-bg);
+    margin: 20px;
+    padding: 10px;
+    text-align: center;
+    flex-basis: 450px;
+}
+
+@media screen and (prefers-color-scheme: dark) { 
+    :root {
+        --body-bg: #333;
+        --body-color: #fff;
+    }    
+}
+  
+
+  
+  
+  
+  

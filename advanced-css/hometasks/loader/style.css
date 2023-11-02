@@ -1,0 +1,52 @@
+:root {
+    --color: #555;
+    --size: 5px;
+}
+  
+.loader {
+    width: var(--size);
+    height: var(--size);
+    display: flex;
+    align-items: center;
+    justify-content: center;  
+    flex-shrink: 0;
+    background-color: var(--color);
+    border-radius: var(--size);
+    font-size: 0;
+    margin: 0 15px;
+}
+
+.loader::before,
+.loader::after {
+    content: ' ';
+    width: var(--size);
+    height: var(--size);
+    margin: 0 var(--size);    
+    flex-shrink: 0;
+    border-radius: var(--size);
+    background-color: var(--color);
+    animation-fill-mode: both;
+}
+  
+
+.loader::before {
+    margin-right: calc(var(--size) * 2);
+}
+
+.loader::before {
+    animation: moveAnimation .5s ease-in-out alternate infinite;
+}
+
+.loader::after {
+    animation: moveAnimation .5s ease-in-out alternate .3s infinite;
+}
+
+@keyframes moveAnimation {
+    0% { 
+        transform: scale(.8); 
+    }
+
+    100% { 
+        transform: scale(1.5); 
+    }
+}

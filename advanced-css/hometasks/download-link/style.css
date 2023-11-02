@@ -1,0 +1,21 @@
+body {
+    font-family: sans-serif;
+}
+  
+a {
+    text-decoration: none;
+    color: #000;
+}
+  
+a[href$=".pdf"]::before {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
+    width: 20px;
+    height: 20px;
+    background-image: url('./assets/icon-pdf.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}

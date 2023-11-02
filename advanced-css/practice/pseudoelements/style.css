@@ -1,0 +1,84 @@
+/* Кастомный счётчик */
+
+.breadcrumbs {
+	display: flex;
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+.breadcrumbs__item:not(:last-child)::after {
+	content: '/';
+	display: inline-block;
+	padding: 0 10px;
+}
+
+/* Ссылка со стрелкой */
+
+.arrow-link {
+	display: flex;
+	align-items: center;
+}
+
+.arrow-link::after {
+	content: '';
+	width: 8px;
+	height: 8px;
+	border-right: 1px solid black;
+	border-bottom: 1px solid black;
+	transform: rotate(-45deg);
+}
+
+/* Кастомный чекбокс */
+
+[type='checkbox'] {
+	position: absolute; 
+	opacity: 0; 
+}
+
+[type='checkbox'] + label {
+	display: flex;
+	align-items: center;
+	cursor: pointer;
+	position: relative;
+}
+
+[type='checkbox'] + label::before {
+	content: '';
+	width: 12px;
+	height: 12px;
+	border: 1px solid black;
+	margin-right: 10px;
+}
+
+[type='checkbox'] + label::after {
+	display: none;
+	content: '';
+	position: absolute;
+    left: 4px;
+    top: 3px;
+    width: 5px;
+    height: 8px;
+	border-right: 1px solid black;
+	border-bottom: 1px solid black;
+	transform: rotate(45deg);
+}
+
+[type='checkbox']:checked + label::after {
+	display: block;
+}
+
+/* Кастомный счётчик */
+
+.list {
+	list-style-type: none;
+	counter-reset: new-counter;
+}
+
+.list__item {
+	counter-increment: new-counter;
+}
+
+.list__item::before {
+    content: counter(new-counter) ") ";
+}

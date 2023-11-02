@@ -1,0 +1,117 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 64px;
+}
+
+.destinations__headline {
+    margin: 0 0 30px;
+    font-size: 40px;
+    font-weight: 700;
+    letter-spacing: -0.64px;
+}
+
+.destinations__lead {
+    margin: 0 0 64px;
+    font-size: 24px;
+    letter-spacing: -0.38px;
+}
+
+.destinations-grid {
+    display: grid;
+    grid-template-columns: 376px 512px 240px 376px;
+    grid-template-rows: repeat(2, 335px);
+    grid-template-areas: 
+        'v g l l'
+        'or g a p'
+    ;
+    gap: 32px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.destinations-grid__item {
+    border-radius: 32px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.destinations-grid__item-link {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 100%;
+    color: #fff;
+    padding: 32px;
+    border-radius: 32px;
+    text-decoration: none;
+}
+
+.destinations-grid__item-link:hover {
+    opacity: .75;
+}
+
+.destinations-grid__item-headline {
+    margin: 0 0 5px;
+    font-size: 24px;
+    font-weight: 500;
+    letter-spacing: -0.38px;
+}
+
+.destinations-grid__item-desc {
+    margin: 0;
+    font-size: 16px;
+    letter-spacing: 0.5px;
+}
+
+.destinations-grid__item--greece {
+    grid-area: g;
+    background: 
+        linear-gradient(180deg, rgba(0, 0, 0, 0.06) 0%, rgba(0, 0, 0, 0.34) 58.08%, rgba(0, 0, 0, 0.56) 100%), 
+        url('assets/greece.png'), #6C757D;
+}
+
+.destinations-grid__item--london {
+    grid-area: l;
+    background: 
+        linear-gradient(180deg, rgba(0, 0, 0, 0.06) 0%, rgba(0, 0, 0, 0.34) 58.08%, rgba(0, 0, 0, 0.56) 100%), 
+        url('assets/london.png'), #6C757D;
+}
+
+.destinations-grid__item--paris {
+    grid-area: p;
+    background: 
+        linear-gradient(180deg, rgba(0, 0, 0, 0.06) 0%, rgba(0, 0, 0, 0.34) 58.08%, rgba(0, 0, 0, 0.56) 100%), 
+        url('assets/paris.png'), #6C757D;
+}
+
+.destinations-grid__item--vietnam {
+    grid-area: v;
+    background: 
+        linear-gradient(180deg, rgba(0, 0, 0, 0.06) 0%, rgba(0, 0, 0, 0.34) 58.08%, rgba(0, 0, 0, 0.56) 100%), 
+        url('assets/vietnam.png'), #6C757D;
+}
+
+.destinations-grid__item--oldrain {
+    grid-area: or;
+    background: 
+        linear-gradient(180deg, rgba(0, 0, 0, 0.06) 0%, rgba(0, 0, 0, 0.34) 58.08%, rgba(0, 0, 0, 0.56) 100%), 
+        url('assets/old-rain.png'), #6C757D;
+}
+
+.destinations-grid__item--amsterdam {
+    grid-area: a;
+    background: 
+        linear-gradient(180deg, rgba(0, 0, 0, 0.06) 0%, rgba(0, 0, 0, 0.34) 58.08%, rgba(0, 0, 0, 0.56) 100%), 
+        url('assets/amsterdam.png'), #6C757D;
+}

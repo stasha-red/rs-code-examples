@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Header</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header">
+        <a class="logo" href="">
+            <img src="https://placehold.co/130x30" alt="Company logo">
+        </a>
+        <form class="search-form" action="">
+            <input class="search-form__control" type="text" name="query" placeholder="What do you want to find" autocomplete="off">
+            <button class="search-form__submit" type="submit" title="Search" required>
+                <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 50 50" width="20px" height="20px">
+                    <path fill="#fff" d="M 21 3 C 11.621094 3 4 10.621094 4 20 C 4 29.378906 11.621094 37 21 37 C 24.710938 37 28.140625 35.804688 30.9375 33.78125 L 44.09375 46.90625 L 46.90625 44.09375 L 33.90625 31.0625 C 36.460938 28.085938 38 24.222656 38 20 C 38 10.621094 30.378906 3 21 3 Z M 21 5 C 29.296875 5 36 11.703125 36 20 C 36 28.296875 29.296875 35 21 35 C 12.703125 35 6 28.296875 6 20 C 6 11.703125 12.703125 5 21 5 Z"/>
+                </svg>
+            </button>
+            <div class="suggestions search-form__suggestions">
+                <div class="suggestions__container popular-search">
+                    <p class="popular-search__headline">Popular search</p>
+                    <ul class="popular-search__list">
+                        <li class="popular-search__list-item">
+                            <a class="popular-search__list-link" href="">
+                                machine learning
+                            </a>
+                        </li>
+                        <li class="popular-search__list-item">
+                            <a class="popular-search__list-link" href="">project management</a>
+                        </li>
+                        <li class="popular-search__list-item">
+                            <a class="popular-search__list-link" href="">data analytics</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </form>
+    </div>
+    <div class="main">
+        <h1>CSS Layout - The position Property</h1>
+        <p>The position property specifies the type of positioning method used for an element (static, relative, fixed, absolute or sticky)</p>
+        <h2>The position Property</h2>
+        <p>The <code>position</code> property specifies the type of positioning method used for an element.</p>
+        <p>There are five different position values: </p>
+        <ul>
+            <li><code>static</code></li>
+            <li><code>relative</code></li>
+            <li><code>fixed</code></li>
+            <li><code>absolute</code></li>
+            <li><code>sticky</code></li>
+        </ul>
+        <p>Elements are then positioned using the top, bottom, left, and right 
+        properties. However, these properties will not work unless the <code>position</code> 
+        property is set first. They also work differently depending on the position 
+        value.</p>
+        <hr>
+        <img src="https://placehold.co/430x230" alt="">
+        <h2>position: static;</h2>
+        <p>HTML elements are positioned static by default.</p>
+        <p>Static positioned elements are not affected by the top, bottom, left, and right properties.</p>
+        <p>An element with <code>position: static;</code> is not positioned in any special way; it is 
+        always positioned according to the normal flow of the page:</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe dolore fugit dolorum, sapiente rerum illum odit, iure magnam ad maxime ea. Quos a ea sit illum provident tempora consectetur iste.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe dolore fugit dolorum, sapiente rerum illum odit, iure magnam ad maxime ea. Quos a ea sit illum provident tempora consectetur iste.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe dolore fugit dolorum, sapiente rerum illum odit, iure magnam ad maxime ea. Quos a ea sit illum provident tempora consectetur iste.</p>
+    </div>
+</body>
+</html>
