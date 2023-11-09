@@ -1,0 +1,18 @@
+%button {
+    display: inline-block;
+    padding: .8em 2em;
+    border: 0;
+}
+
+.bg-primary {
+    background-color: red;
+}
+
+.btn {
+    @extend %button;
+    @extend .bg-primary;
+}
+
+.header-btn {
+    @extend .btn;
+}

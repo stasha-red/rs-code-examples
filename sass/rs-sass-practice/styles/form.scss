@@ -1,0 +1,14 @@
+.form__control {
+    padding: 10px;
+    border: 0;
+    font-family: $font-base;
+    font-size: .875em;
+    line-height: 1.93;
+    background-color: $form-control-bg;
+    color: $form-control-color;
+    text-align: center;
+
+    &::placeholder {
+        color: $form-control-placeholder;
+    }
+}

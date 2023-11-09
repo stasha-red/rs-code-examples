@@ -1,0 +1,21 @@
+.form__control {
+    display: block;
+    width: 100%;
+    margin-bottom: 24px;
+    padding: 14px 32px;
+    border: 1px solid rgba(255, 255, 255, .1);
+    font-family: $font-base;
+    font-size: 1rem;
+    line-height: 1.75;
+    background-color: $form-control-bg;
+    color: $form-control-color;
+    resize: none;
+
+    &::placeholder {
+        color: $form-control-placeholder;
+    }
+}
+
+textarea.form__control {
+    min-height: 145px;
+}

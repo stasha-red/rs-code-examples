@@ -1,0 +1,125 @@
+@use './scss/variables.scss';
+@use './scss/base.scss';
+@use './scss/button.scss';
+@use './scss/header.scss';
+
+
+$font-size: 16;
+
+@function double-value($value) {
+    @return $value * 2;
+}
+
+.headline {
+    font-size: #{double-value($font-size)}px;
+}
+
+@function tint-color($color, $width) {
+    @return mix(white, $color, $width);
+}
+
+@function shade-color($color, $width) {
+    @return mix(black, $color, $width);
+}
+// 
+
+
+
+
+
+
+@function sum($nmb1, $nmb2) {
+    @return $nmb1 + $nmb2;
+}
+
+
+$width: 100;
+$spacing: 10;
+
+.block {
+    width: #{sum($width, $spacing)}px;
+}
+
+
+@mixin padding-x($pr:20px, $pl:20px) {
+    padding-left: $pl;
+    padding-right: $pr;
+}
+
+.px-10 {
+    @include padding-x(10px, 10px);
+}
+
+.px-20 {
+    @include padding-x();
+}
+
+
+
+
+@mixin btn {
+    display: block;
+    padding: 20px;
+    font-weight: bold;
+    font-size: .8em;
+    color: #333;
+
+    @content;
+}
+
+.btn {
+    @include btn {
+        &.btn-blue {
+            background-color: #42a5f5;
+            color: #fff;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@mixin box-shadow {
+    -moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,.5);
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,.5);
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,.5);
+}
+
+
+
+@mixin flex {
+    display: flex;
+}
+
+@mixin spacing-reset {
+    margin: 0;
+    padding: 0;
+}
+
+
+@mixin horizontal-list {
+    @include flex;
+    @include spacing-reset;
+
+    list-style: none;
+}
+
+ul {
+    @include spacing-reset;
+}
+
+.menu {
+    @include horizontal-list;
+    @include box-shadow;
+}

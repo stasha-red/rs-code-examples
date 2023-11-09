@@ -1,0 +1,41 @@
+@include font-face($font-base, './assets/fonts/Poppins-Medium', 500);
+@include font-face($font-base, './assets/fonts/Poppins-Regular');
+@include font-face($font-headline, './assets/fonts/PlayfairDisplay-Bold', 700);
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: $font-base;
+    background-color: $body-bg;
+    color: $body-color;
+}
+
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 80px;
+}
+
+.h1 {
+    margin-top: 0;
+    margin-bottom: .5em;
+    font-family: $font-headline;
+    font-size: 3rem;
+}
+
+.flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+@media screen and (min-width: 768px) {
+    .flex {        
+        flex-direction: row;
+        gap: 32px;
+    }
+}

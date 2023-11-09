@@ -1,0 +1,11 @@
+.contacts__form {
+    max-width: 658px;
+}
+
+@media screen and (min-width: 768px) {
+    .contacts__container {   
+        background-image: url('../assets/images/bg-fromtview.jpg'), url('../assets/images/bg-coffee.jpg');
+        background-position: calc(100% - 380px) calc(100% - 80px), calc(100% - 80px) 80px;
+        background-repeat: no-repeat, no-repeat;
+    }
+}

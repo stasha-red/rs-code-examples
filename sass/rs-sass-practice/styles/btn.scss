@@ -1,0 +1,13 @@
+.btn {
+    padding: 10px;
+    border: 0;
+    font-size: 1rem;
+    line-height: 1.6875;
+    font-weight: 700;
+    text-align: center;
+}
+
+.btn--primary {
+    background-color: $btn-primary-bg;
+    color: $btn-primary-color;
+}

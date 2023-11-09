@@ -1,0 +1,100 @@
+@font-face {
+  font-family: "Poppins";
+  src: local("Poppins"), url("./assets/fonts/Poppins-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Poppins";
+  src: local("Poppins"), url("./assets/fonts/Poppins-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Playfair Display";
+  src: local("Playfair Display"), url("./assets/fonts/PlayfairDisplay-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Poppins";
+  background-color: #19161B;
+  color: #FFF;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 80px;
+}
+
+.h1 {
+  margin-top: 0;
+  margin-bottom: 0.5em;
+  font-family: "Playfair Display";
+  font-size: 3rem;
+}
+
+.flex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@media screen and (min-width: 768px) {
+  .flex {
+    flex-direction: row;
+    gap: 32px;
+  }
+}
+.btn {
+  margin: 12px 0 52px;
+  padding: 20px 30px;
+  border: 0;
+  font-size: 1rem;
+  line-height: 1.5;
+  font-weight: 500;
+  text-align: center;
+  background-color: #27252D;
+  color: #FFF;
+}
+
+.form__control {
+  display: block;
+  width: 100%;
+  margin-bottom: 24px;
+  padding: 14px 32px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  font-family: "Poppins";
+  font-size: 1rem;
+  line-height: 1.75;
+  background-color: #19161B;
+  color: #FFF;
+  resize: none;
+}
+.form__control::-moz-placeholder {
+  color: #FFF;
+}
+.form__control::placeholder {
+  color: #FFF;
+}
+
+textarea.form__control {
+  min-height: 145px;
+}
+
+.contacts__container {
+  background-image: url("../assets/images/bg-fromtview.jpg"), url("../assets/images/bg-coffee.jpg");
+  background-position: calc(100% - 380px) calc(100% - 80px), calc(100% - 80px) 80px;
+  background-repeat: no-repeat, no-repeat;
+}
+
+.contacts__form {
+  max-width: 658px;
+}/*# sourceMappingURL=style.css.map */

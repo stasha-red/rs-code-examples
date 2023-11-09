@@ -1,0 +1,27 @@
+@include font-face('Open Sans', './fonts/OpenSans-Bold', 700);
+@include font-face('Open Sans', './fonts/OpenSans-Regular');
+@include font-face('Playfair Display', './fonts/PlayfairDisplay-Bold', 700);
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: $font-base;
+    background-color: $body-bg;
+    color: $body-color;
+}
+
+.container {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 50px 80px;
+}
+
+.h1 {
+    margin-bottom: 1.38em;
+    font-family: $font-headline;
+    font-size: 2.25rem;
+    color: $color-primary;
+}

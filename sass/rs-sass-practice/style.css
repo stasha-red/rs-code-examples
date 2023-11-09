@@ -1,0 +1,97 @@
+@font-face {
+  font-family: "Open Sans";
+  src: local("Open Sans"), url("./fonts/OpenSans-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Open Sans";
+  src: local("Open Sans"), url("./fonts/OpenSans-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Playfair Display";
+  src: local("Playfair Display"), url("./fonts/PlayfairDisplay-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Open Sans";
+  background-color: #242B33;
+  color: #E7E7E7;
+}
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 50px 80px;
+}
+
+.h1 {
+  margin-bottom: 1.38em;
+  font-family: "Playfair Display";
+  font-size: 2.25rem;
+  color: red;
+}
+
+.btn {
+  padding: 10px;
+  border: 0;
+  font-size: 1rem;
+  line-height: 1.6875;
+  font-weight: 700;
+  text-align: center;
+}
+
+.btn--primary {
+  background-color: red;
+  color: #FFF;
+}
+
+.form__control {
+  padding: 10px;
+  border: 0;
+  font-family: "Open Sans";
+  font-size: 0.875em;
+  line-height: 1.93;
+  background-color: #50555C;
+  color: #FFF;
+  text-align: center;
+}
+.form__control::-moz-placeholder {
+  color: #BEBEBE;
+}
+.form__control::placeholder {
+  color: #BEBEBE;
+}
+
+.contacts__form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+}
+.contacts__form > * {
+  width: 100%;
+}
+
+.contacts__notice {
+  font-size: 0.8125rem;
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .contacts__form {
+    flex-direction: row;
+  }
+  .contacts__form > * {
+    flex-basis: calc(25% - 23px);
+  }
+}/*# sourceMappingURL=style.css.map */
