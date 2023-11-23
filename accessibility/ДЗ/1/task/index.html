@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Accessible poll</title>
+</head>
+<body>
+    <form role="form">
+        <h2>Poll title</h2>
+        <div id="pollQuestion">Is this accessible?</div>
+        <div name="pollGroup" role="radiogroup">
+          <div role="radiogroup" aria-label="Poll title">
+            <input type="radio" name="poll" aria-labelledby="pollQuestion" value="[object Object]">
+            <span>Yes</span>
+      
+            <input type="radio" name="poll" aria-labelledby="pollQuestion" value="[object Object]">
+            <span>No</span>
+      
+            <input type="radio" name="poll" aria-labelledby="pollQuestion" value="[object Object]">
+            <span>Maybe</span>
+      
+            <input type="radio" name="poll" aria-labelledby="pollQuestion" value="[object Object]">
+            <span>Can you repeat the question?</span>
+          </div>
+      
+          <button type="submit">Vote</button>
+        </div>
+      </form>
+</body>
+</html>

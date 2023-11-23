@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <title>Accessible footer</title>
+    </head>
+    <body>
+        <h1>Accessible footer</h1>
+        <footer class="footer">
+                <div class="footer__main">
+                    <div class="container footer__main-container">
+                        <div class="footer__contacts">
+                            <h2 class="footer__title">Contact</h2>
+                            <address class="footer__address">
+                                <p class="footer__info footer__info--phone"><a href="tel:+1 (800) 555-5555">+1 (800) 555-5555</a></p>
+                                <p class="footer__info footer__info--email"><a href="mailto:info@company.com">info@company.com</a></p>
+                                <p class="footer__info footer__info--address">Street Address <br>City, Zip Code</p>
+                            </address>
+                            <div class="footer__social">
+                                <h2 class="visually-hidden">Social Media Links</h2>
+                                <ul class="socials">
+                                    <li class="socials__list-item">
+                                        <a href="#" class="socials__link" aria-label="Facebook">
+                                            <svg width="35px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 35 35"><path d="M33.07,0H1.93A1.93,1.93,0,0,0,0,1.93H0V33.07A1.93,1.93,0,0,0,1.93,35H18.69V21.45H14.13V16.16h4.56v-3.9c0-4.52,2.76-7,6.79-7a37.42,37.42,0,0,1,4.07.24v4.72h-2.8c-2.19,0-2.62,1-2.62,2.57v3.37h5.23l-0.68,5.28H24.15V35h8.92A1.93,1.93,0,0,0,35,33.07h0V1.93A1.93,1.93,0,0,0,33.07,0h0Z" transform="translate(0 0)"/></svg>
+                                        </a>
+                                    </li>
+                                    <li class="socials__list-item">
+                                        <a href="#" class="socials__link socials__link--instagram" aria-label="Instagram">
+                                            <svg width="35px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 35 35"><path d="M18,3.65c4.67,0,5.23,0,7.07.1a9.68,9.68,0,0,1,3.25.6,5.42,5.42,0,0,1,2,1.31,5.42,5.42,0,0,1,1.31,2,9.68,9.68,0,0,1,.6,3.25c0.08,1.85.1,2.4,0.1,7.07s0,5.23-.1,7.07a9.68,9.68,0,0,1-.6,3.25,5.8,5.8,0,0,1-3.32,3.32,9.68,9.68,0,0,1-3.25.6c-1.85.08-2.4,0.1-7.07,0.1s-5.23,0-7.07-.1a9.68,9.68,0,0,1-3.25-.6,5.42,5.42,0,0,1-2-1.31,5.42,5.42,0,0,1-1.31-2,9.68,9.68,0,0,1-.6-3.25c-0.08-1.85-.1-2.4-0.1-7.07s0-5.23.1-7.07a9.68,9.68,0,0,1,.6-3.25,5.42,5.42,0,0,1,1.31-2,5.42,5.42,0,0,1,2-1.31,9.68,9.68,0,0,1,3.25-.6c1.85-.08,2.4-0.1,7.07-0.1M18,0.5c-4.75,0-5.35,0-7.22.11a12.84,12.84,0,0,0-4.25.81,8.58,8.58,0,0,0-3.1,2,8.58,8.58,0,0,0-2,3.1,12.84,12.84,0,0,0-.81,4.25C0.52,12.65.5,13.25,0.5,18s0,5.35.11,7.22a12.84,12.84,0,0,0,.81,4.25,8.58,8.58,0,0,0,2,3.1,8.58,8.58,0,0,0,3.1,2,12.84,12.84,0,0,0,4.25.81c1.87,0.09,2.46.11,7.22,0.11s5.35,0,7.22-.11a12.84,12.84,0,0,0,4.25-.81,8.95,8.95,0,0,0,5.12-5.12,12.84,12.84,0,0,0,.81-4.25c0.09-1.87.11-2.46,0.11-7.22s0-5.35-.11-7.22a12.84,12.84,0,0,0-.81-4.25,8.58,8.58,0,0,0-2-3.1,8.58,8.58,0,0,0-3.1-2A12.84,12.84,0,0,0,25.22.61C23.35,0.52,22.75.5,18,.5h0Z" transform="translate(-0.5 -0.5)"/><path d="M18,9a9,9,0,1,0,9,9A9,9,0,0,0,18,9Zm0,14.82A5.83,5.83,0,1,1,23.83,18,5.83,5.83,0,0,1,18,23.83Z" transform="translate(-0.5 -0.5)"/><circle cx="26.84" cy="8.16" r="2.1"/></svg>
+                                        </a>
+                                    </li>
+                                    <li class="socials__list-item">
+                                        <a href="#" class="socials__link socials__link--twitter" aria-label="Twitter">
+                                            <svg width="43px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 43.07 35"><path d="M13.54,35.5C29.8,35.5,38.68,22,38.68,10.36c0-.38,0-0.76,0-1.14a18,18,0,0,0,4.41-4.57A17.64,17.64,0,0,1,38,6a8.87,8.87,0,0,0,3.89-4.89,17.71,17.71,0,0,1-5.61,2.14,8.84,8.84,0,0,0-15.06,8.06A25.08,25.08,0,0,1,3,2.12a8.84,8.84,0,0,0,2.74,11.8,8.77,8.77,0,0,1-4-1.11s0,0.07,0,.11a8.84,8.84,0,0,0,7.09,8.66,8.82,8.82,0,0,1-4,.15,8.85,8.85,0,0,0,8.25,6.14,17.73,17.73,0,0,1-11,3.78A18,18,0,0,1,0,31.53a25,25,0,0,0,13.54,4" transform="translate(0 -0.5)"/></svg>
+                                        </a>
+                                    </li>
+                                    <li class="socials__list-item">
+                                        <a href="#" class="socials__link socials__link--youtube" aria-label="YouTube">
+                                            <svg width="84px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 83.87 35"><path d="M33.15,29.32H30V27.48c-1.21,1.38-2.23,2.08-3.34,2.08a2,2,0,0,1-2-1.29,6.73,6.73,0,0,1-.35-2.46V12.42h3.18V26.14a0.62,0.62,0,0,0,.68.64c0.61,0,1.16-.53,1.83-1.48V12.42h3.18V29.32Z" transform="translate(-1.85 -1)"/><path d="M21.94,17.94a6.73,6.73,0,0,0-1-4,4.22,4.22,0,0,0-3.52-1.63,4,4,0,0,0-3.52,1.63,6.71,6.71,0,0,0-1,4v6a6.24,6.24,0,0,0,1,3.88,4.43,4.43,0,0,0,3.56,1.76A4.48,4.48,0,0,0,21,27.85,6.32,6.32,0,0,0,21.94,24v-6ZM18.76,24.3c0.17,1.67-.35,2.5-1.34,2.5s-1.51-.83-1.34-2.5v-6.7c-0.17-1.67.35-2.46,1.34-2.46s1.51,0.78,1.34,2.46v6.7Z" transform="translate(-1.85 -1)"/><path d="M9.38,20.12v9.21H6V20.12S2.56,8.83,1.85,6.72H5.36l2.35,8.82,2.34-8.82h3.52Z" transform="translate(-1.85 -1)"/><path d="M65.87,15.11a2.35,2.35,0,0,0-1.58.76V26a2.33,2.33,0,0,0,1.58.76c0.87,0,1.27-.64,1.27-2.32v-7.2C67.13,15.6,66.74,15.11,65.87,15.11Z" transform="translate(-1.85 -1)"/><path d="M78.35,17.12c0-1.55-.4-2-1.4-2s-1.44.43-1.44,2v1.85h2.85V17.12Z" transform="translate(-1.85 -1)"/><path d="M85.22,8.55s-0.49-3.43-2-4.94a7.17,7.17,0,0,0-5-2.11C71.23,1,60.74,1,60.74,1h0s-10.49,0-17.49.5a7.17,7.17,0,0,0-5,2.11c-1.5,1.51-2,4.94-2,4.94a74.92,74.92,0,0,0-.5,8.05v3.78a74.92,74.92,0,0,0,.5,8.05s0.49,3.43,2,4.94c1.9,2,4.4,1.92,5.51,2.13,4,0.38,17,.5,17,0.5s10.5,0,17.5-.52a7.17,7.17,0,0,0,5-2.11c1.5-1.51,2-4.94,2-4.94a75,75,0,0,0,.5-8.05V16.6A75,75,0,0,0,85.22,8.55ZM46.71,29.32H43.36V10.07H39.85V6.9H50.39v3.18H46.71V29.32Zm12.05,0H55.58V27.48c-1.21,1.38-2.23,2.08-3.34,2.08a2,2,0,0,1-2-1.29,6.73,6.73,0,0,1-.35-2.46V12.58h3.18V26.14a0.62,0.62,0,0,0,.68.64c0.61,0,1.16-.53,1.83-1.48V12.58h3.18V29.32Zm11.55-5A12.87,12.87,0,0,1,70,27.65a2.49,2.49,0,0,1-2.49,1.89,4.31,4.31,0,0,1-3.19-1.9v1.69h-3V6.89h3v7.31a4.34,4.34,0,0,1,3.2-1.89,2.45,2.45,0,0,1,2.42,1.95,11.74,11.74,0,0,1,.41,3.34v6.7ZM77,26.78a1.3,1.3,0,0,0,1.35-1.22c0-.17,0-0.89,0-2.1h3.18v0.47a19.06,19.06,0,0,1-.11,2,4.32,4.32,0,0,1-.71,1.82A4.19,4.19,0,0,1,77,29.54a4.34,4.34,0,0,1-3.67-1.71A6.19,6.19,0,0,1,72.32,24V18.11a6.73,6.73,0,0,1,1-4A4.34,4.34,0,0,1,77,12.34a4.24,4.24,0,0,1,3.58,1.75,6.56,6.56,0,0,1,1,3.94v3.42h-6v3C75.49,26,75.93,26.78,77,26.78Z" transform="translate(-1.85 -1)"/></svg>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="footer__resources">
+                            <h2 class="footer__title">Resources</h2>
+                            <div class="footer__nav">
+                                <ul class="footer__nav-list">
+                                    <li><a href="#">Press</a></li>
+                                    <li><a href="#">FAQ</a></li>
+                                    <li><a href="#">Jobs</a></li>
+                                    <li><a href="#">Charity</a></li>
+                                </ul>
+                                <ul class="footer__nav-list">
+                                    <li><a href="#">Privacy</a></li>
+                                    <li><a href="#">Blog</a></li>
+                                    <li><a href="#">About</a></li>
+                                </ul>
+                            </div>
+                            <div role="search">
+                            <form class="search-form" action="">
+                                <input type="search" name="search" aria-label="Search the site:" class="search-form__input" />
+                                <button type="submit" class="search-form__submit"><span class="visually-hidden">Perform</span>Search</button>
+                            </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer__bottom">
+                    <div class="container">
+                        <small class="footer__copyright">All rights reserved Result School</small>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>

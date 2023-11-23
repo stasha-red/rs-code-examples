@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accessible mobile menu</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>    
+    <div class="container">
+        <button class="menu-toggle js-menu-toggle" aria-expanded="false" aria-controls="nav-menu">
+            <span class="visually-hidden">Меню</span>
+            <svg class="icon icon--menu-toggle" aria-hidden="true" version="1.1" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink" viewBox="0 0 100 100">
+                <g class="svg-menu-toggle">
+                    <path class="line line-1" d="M5 13h90v14H5z" />
+                    <path class="line line-2" d="M5 43h90v14H5z" />
+                    <path class="line line-3" d="M5 73h90v14H5z" />
+                </g>
+            </svg>
+        </button>        
+    </div>
+    <div class="visually-hidden">
+        <svg version="1.1" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink" viewBox="0 0 100 100">
+            <path d="M5 13h90v14H5z" fill="currentColor"/>
+            <path d="M5 43h90v14H5z" fill="currentColor"/>
+            <path d="M5 73h90v14H5z" fill="currentColor"/>
+        </svg>
+    </div>
+</body>
+</html>

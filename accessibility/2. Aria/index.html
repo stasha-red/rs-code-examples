@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ARIA</title>
+</head>
+<body>
+    <!-- Неправильно ⛔ -->
+    <div class="button" role="button">Кнопка</div>
+    
+    <!-- Правильно ✅ -->
+    <button>Кнопка</button>
+
+    <!-- Неправильно ⛔ -->
+    <h2 role="tab">Первая вкладка</h2>
+    
+    <!-- Правильно ✅ -->
+    <div role="tab">
+        <h2>Первая вкладка</h2>
+    </div>
+
+    <!-- Неправильно ⛔ -->
+    <button aria-hidden="true">Кнопка</button>
+
+    <!-- Правильно ✅ -->
+    <button>
+        <span class="emoji" aria-hidden="true">👊</span>
+        <span class="text">Передать привет</span>
+    </button>
+
+    <!-- Правильно ✅ -->
+    <table role="presentation"></table>
+
+    <!-- Неправильно ⛔ -->
+    <a href="">
+        <img src="logo.svg" alt="">
+    </a>
+    
+    <!-- Правильно ✅ -->
+    <a href="">
+        <img src="logo.svg" alt="вКонтакте">
+    </a>
+    
+    <a href="" aria-label="вКонтакте">
+        <img src="logo.svg" alt="">
+    </a>
+
+    <div aria-label="Breadcrumbs">
+        <ul>
+            <li>
+                <a href="">Home</a>
+            </li>
+            <li>
+                <a href="">Catalog</a>
+            </li>
+            <li>
+                <a href="" aria-current="page">Product</a>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>

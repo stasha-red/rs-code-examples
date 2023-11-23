@@ -1,0 +1,157 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+a {
+  color: inherit;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.visually-hidden {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+.footer {
+  font-size: 1.5rem;
+  background: #464646;
+  color: #ffffff;
+}
+
+.footer__main {
+  padding: 60px 0;
+}
+
+.footer__main-container {
+  display: flex;
+}
+
+.footer__main-container > * {
+  flex-basis: 50%;
+}
+
+.footer__title {
+  margin: 0 0 .75em;
+  font-size: 2rem;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+
+.footer__address {
+  margin-bottom: 70px;
+  font-style: normal;
+}
+
+.footer__info--phone a {
+  text-decoration: none;
+}
+
+.footer__nav {
+  display: flex;
+}
+
+.footer__nav-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  flex-basis: 50%;
+}
+
+.footer__nav-list li {
+  margin-bottom: .5em;
+  
+}
+
+.socials {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 25px;
+}
+
+.socials path,
+.socials circle {
+  fill: currentColor;
+}
+
+.socials a {
+  transition: color .3s;
+}
+
+.socials a:hover {
+  color: #386cf7;
+}
+
+.search-form {
+    display: flex;
+    max-width: 800px;
+    margin: 60px auto;
+}
+
+.search-form__input {
+    background-color: #ffffff;
+    width: 100%;
+    padding: 1em;
+    border-radius: 4px;
+    border: 2px solid #f4f4f4;
+    font-size: 1rem;
+}
+
+.search-form__submit {
+    padding: .5em;
+    margin: 0 10px;
+    border: 3px solid #386cf7;
+    border-radius: 4px;
+    font-size: 1.5rem;
+    line-height: 1;
+    background-color: #386cf7;
+    color: #ffffff;
+    transition: opacity .3s;
+}
+
+.search-form__submit:hover {
+    opacity: .75;
+}
+
+.footer__bottom {
+  background-color: black;
+  padding: 40px 0;
+  text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+  .footer__main {
+    padding: 30px 0;
+  }
+
+  .footer__main-container {
+    flex-direction: column;
+  }
+  
+  .footer__main-container > * {
+    flex-basis: 100%;
+  }
+
+  .socials {
+    margin-bottom: 40px;
+  }
+}

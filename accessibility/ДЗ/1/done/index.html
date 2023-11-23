@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Accessible poll</title>
+</head>
+<body>
+    <h1 class="visually-hidden">Accessible poll</h1>
+    <form>
+        <h2>Poll title</h2>
+        <fieldset>
+            <legend>Is this accessible?</legend>
+            <input id="poll-yes" type="radio" name="poll" value="yes">
+            <label for="poll-yes">Yes</label>
+      
+            <input id="poll-no" type="radio" name="poll" value="no">
+            <label for="poll-no">No</label>
+      
+            <input id="poll-maybe" type="radio" name="poll" value="maybe">
+            <label for="poll-maybe">Maybe</label>
+      
+            <input id="poll-repeat" type="radio" name="poll" value="repest">
+            <label for="poll-repeat">Can you repeat the question?</label>
+        </fieldset>
+      
+        <button type="submit">Vote</button>
+      </form>
+</body>
+</html>

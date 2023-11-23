@@ -1,0 +1,61 @@
+.visually-hidden {
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+}
+
+.container {    
+    max-width: 800px;
+    margin: 60px auto;
+    text-align: center;
+}
+
+.menu-toggle {
+    display: inline-block;
+    padding: 1rem;
+    border: 0;
+    background: #464646;
+    color: #ffffff;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.icon {
+    display: inline-block;
+    fill: currentColor;
+    height: 2rem;
+    width: 2rem;
+    vertical-align: middle;
+    position: relative;
+}
+
+.svg-menu-toggle .line {
+    opacity: 1;
+    transform: rotate(0) translateY(0) translateX(0);
+    transform-origin: 1rem 1em;
+    transition: opacity 0.2s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.svg-menu-toggle .line-1 {
+    transform-origin: 1rem 2.5rem;
+}
+
+.svg-menu-toggle .line-3 {
+    transform-origin: 1rem 4rem;
+}
+
+.menu-toggle.opened .svg-menu-toggle .line-1 {
+    transform: rotate(45deg) translateY(0) translateX(0);
+}
+
+.menu-toggle.opened .svg-menu-toggle .line-2 {
+    opacity: 0;
+}
+
+.menu-toggle.opened .svg-menu-toggle .line-3 {
+    transform: rotate(-45deg) translateY(0) translateX(0);
+}
