@@ -1,0 +1,32 @@
+.download-list {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.download-list__item:not(:last-child) {
+    margin-right: 8px;
+}
+
+.download-list__link {
+    display: block;
+    border-radius: 5px;
+    background-color: #333;
+
+    img {
+        vertical-align: middle;
+        transition: opacity .3s;
+    }
+
+    &:hover img {
+        opacity: .75;
+    }
+}
+
+@media screen and (max-width: 768px) {    
+    .download-list {
+        justify-content: center;
+    }
+}

@@ -1,0 +1,32 @@
+.h1 {
+    font-size: var(--font-size-h1);
+    line-height: 1.1;
+    font-weight: 500;
+    margin: 0 0 2rem;
+}
+
+.h2 {
+    font-size: var(--font-size-h2);
+    line-height: 1.1;
+    font-weight: 500;
+    margin: 0 0 2rem;
+}
+
+.h3 {
+    font-size: 1.0625rem;
+    line-height: 1.1;
+    font-weight: 500;
+    margin: 0 0 2rem;
+}
+
+.lead {
+    font-size: var(--font-size-lead);
+    font-weight: 400;
+    margin: 0 0 2rem;
+}
+
+@media screen and (max-width: 768px) {   
+    .h3 {
+        margin-bottom: 1rem;
+    }
+}

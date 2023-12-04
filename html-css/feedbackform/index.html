@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Irorun</title>
+</head>
+<body>
+    <header class="header">
+        <div class="container container--flex header__container">
+            <a href class="logo header__logo">
+                <img src="assets/logo.svg" width="150" alt="irorun">
+            </a>
+            <nav class="menu">
+                <ul class="menu-list">
+                    <li class="menu-list__item"><a href>Home</a></li>
+                    <li class="menu-list__item"><a href>Contact</a></li>
+                    <li class="menu-list__item"><a href>Privacy</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="two-column">
+            <div class="container container--flex two-column__container">
+                <div class="two-column__text">
+                    <h1 class="h1 two-column__text-headline">Get Instant Loans</h1>
+                    <p class="lead two-column__text-lead">Get instant loans with ease on your smartphone.</p>
+                    <ul class="download-list">
+                        <li class="download-list__item">
+                            <a class="download-list__link" href>
+                                <img src="./assets/icons/google-play-purple.svg" alt="Link to Google Play">
+                            </a>
+                        </li>
+                        <li class="download-list__item">
+                            <a class="download-list__link" href>
+                                <img src="./assets/icons/app-store-purple.svg" alt="Link to App Store">                            
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="two-column__media" style="background-image: url('assets/images/man-1.svg');"></div>
+            </div>
+        </section>
+        <section class="two-column">
+            <div class="container container--flex two-column__container">
+                <div class="two-column__media" style="background-image: url('assets/images/man-2.svg');"></div>
+                <div class="two-column__text">
+                    <h2 class="h2 two-column__text-headline">Save on your own terms</h2>
+                    <p class="lead two-column__text-lead">Savings give you financial options</p>
+                    <ul class="download-list">
+                        <li class="download-list__item">
+                            <a class="download-list__link" href>
+                                <img src="./assets/icons/google-play-purple.svg" alt="Link to Google Play">
+                            </a>
+                        </li>
+                        <li class="download-list__item">
+                            <a class="download-list__link" href>
+                                <img src="./assets/icons/app-store-purple.svg" alt="Link to App Store">                            
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section class="guide">
+            <div class="container">
+                <h2 class="h2">How it works</h2>
+                <ul class="guide-list">
+                    <li class="guide-list__item guide-list__item--purple guide-list__item--account">
+                        <h3 class="h3 guide-list__item-headline">Set up an account</h3>
+                        <p class="guide-list__item-desc">Download the app for free, sign up and verify your account.</p>
+                    </li>
+                    <li class="guide-list__item guide-list__item--orange guide-list__item--application">
+                        <h3 class="h3 guide-list__item-headline">Apply for a loan</h3>
+                        <p class="guide-list__item-desc">Apply for a loan and our technology will run a credit score and decide if you are qualified.</p>
+                    </li>
+                    <li class="guide-list__item guide-list__item--green guide-list__item--cash">
+                        <h3 class="h3 guide-list__item-headline">Get your cash</h3>
+                        <p class="guide-list__item-desc">If you qualify, your loan will be disbursed to your wallet.</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="banner banner--green">
+            <div class="container container--flex banner__container">
+                <h2 class="h3 banner__headline">Get it on Play Store and download on the&nbsp;App&nbsp;Store</h2>      
+                <ul class="download-list">
+                    <li class="download-list__item">
+                        <a class="download-list__link" href>
+                            <img src="./assets/icons/google-play-green.svg" alt="Link to Google Play">
+                        </a>
+                    </li>
+                    <li class="download-list__item">
+                        <a class="download-list__link" href>
+                            <img src="./assets/icons/app-store-green.svg" alt="Link to App Store">                            
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>        
+        <section class="two-column feedback">
+            <div class="container container--flex two-column__container">
+                <div class="two-column__media two-column__media--mobile-hidden" style="background-image: url('assets/images/man-1.svg');"></div>
+                <div class="two-column__text">
+                    <h2 class="h2 two-column__text-headline feedback__headline">Write your feedback</h2>
+                    <p class="two-column__text-desc feedback__desc">Write your suggestions for improving our
+                        application. We will certainly listen to them.</p>
+                    <form class="form" action="">
+                        <input type="text" name="name" placeholder="Your name" class="form__control">
+                        <textarea name="feedback" placeholder="Text" class="form__control form__control--textarea"></textarea>
+                        <button type="submit" class="btn btn--primary feedback__submit">Send</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container container--flex footer__container">
+            <picture class="logo">
+                <img src="assets/logo.svg" width="150" alt="irorun">
+            </picture>
+            <address class="footer__section">
+                <dl class="footer__section-info">
+                    <dt>Office</dt>
+                    <dd>4 Perez Drive, <br> Lekki Phase 1, <br> Lagos.</dd>
+                </dl>
+            </address>
+            <address class="footer__section">
+                <dl class="footer__section-info">
+                    <dt>Contact</dt>
+                    <dd><a href="mailto:hello@irorun.com">hello@irorun.com</a></dd>
+                    <dd><a href="tel:+234 809 666 8877">+234 809 666 8877</a></dd>
+                </dl>
+            </address>
+            <dl class="footer__section">
+                <dt>Powered by YesCredit Limited.</dt>
+                <dd>licensed as a Money Lender by the Lagos State Government of Nigeria.</dd>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

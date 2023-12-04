@@ -1,0 +1,104 @@
+.guide {
+    padding: 50px 0;
+    text-align: center;
+}
+
+.guide-list {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1065px;
+    margin: 0 auto;
+    padding: 0;
+    list-style: none;
+}
+
+.guide-list__item {
+    width: 100%;
+    max-width: 300px;
+    position: relative;
+    margin-right: 80px;
+    padding: 50px 20px;
+    box-shadow: 0px 0px 10px 0px #B7B7B7;
+    border-top: 12px solid;
+
+    &:last-child {
+        margin-right: 0;
+    }
+
+    &::before {
+        content: '';
+        width: 80px;
+        height: 70px;
+        margin: 0 auto 50px;
+        display: block;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+    }
+
+    :not(:last-child)::after {
+        content: '';
+        position: absolute;
+        top: calc(50% - 20px);
+        left: 100%;
+        transform: translateX(50%);
+        width: 40px;
+        height: 40px;
+        border-radius: 40px;
+        background-color: var(--color-purple);
+        color: white;
+        background-image: url('assets/icons/arrow-blue.svg');
+        background-size: contain;
+    }
+}
+
+.guide-list__item--purple {
+    border-top-color: var(--color-purple);
+}
+
+.guide-list__item--orange {
+    border-top-color: var(--color-orange);
+}
+
+.guide-list__item--green {
+    border-top-color: var(--color-green);
+}
+
+.guide-list__item--account::before {
+    background-image: url('assets/icons/icon-account.svg');
+}
+
+.guide-list__item--application::before {
+    background-image: url('assets/icons/icon-application.svg');
+}
+
+.guide-list__item--cash::before {
+    background-image: url('assets/icons/icon-cash.svg');
+}
+
+.guide-list__item-desc {
+    margin: 0;
+}
+
+@media screen and (max-width: 768px) {       
+    .guide-list {
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .guide-list__item {
+        margin-right: 0;
+
+        :not(:last-child) {
+            margin-bottom: 50px;
+        }
+
+        :not(:last-child)::after {
+            width: 30px;
+            height: 30px;
+            top: calc(100% + 10px);
+            left: calc(50% - 20px);
+            transform: rotate(0.25turn);
+        }
+    }
+}

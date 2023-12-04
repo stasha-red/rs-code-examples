@@ -1,0 +1,25 @@
+:root {
+    --font-family: 'Work Sans', Arial, sans-serif;
+    --font-size-h1: 3.5rem;
+    --font-size-h2: 2.8rem;
+    --font-size-lead: 1.5rem;
+
+    --color-text: #333;
+
+    --color-primary: #0082F3;
+    --color-green: #31C5A1;
+    --color-purple: #582EFF;
+    --color-orange: #FF814A;
+
+    --transition-duration: .3s;
+    --transition-timing-function: ease;
+}
+
+
+@media screen and (max-width: 768px) {    
+    :root {
+        --font-size-h1: 2.8rem;
+        --font-size-h2: 2.25rem;
+        --font-size-lead: 1.1875rem;
+    }
+}

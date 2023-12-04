@@ -1,0 +1,43 @@
+.footer {
+    padding: 50px 0;
+}
+
+.footer__container {
+    gap: 30px;
+    justify-content: space-between;
+}
+
+.footer__section {
+    margin-top: 0;
+    max-width: 265px;
+    font-size: 1.0625rem;
+    line-height: 1.765;
+    font-style: normal;
+
+    dt {
+        font-weight: 500;
+        margin-bottom: .3em;
+    }
+
+    dd {
+        margin-left: 0;
+    }
+}
+
+.footer__section-info {
+    margin-top: 0;
+}
+
+@media screen and (max-width: 768px) {   
+    .footer__container {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .footer__section {
+        max-width: unset;
+        flex-basis: calc(50% - 30px);
+        flex-grow: 1;
+        font-size: .9375rem;
+    }
+}
