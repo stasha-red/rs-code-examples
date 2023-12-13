@@ -8,7 +8,7 @@ body {
 }
 
 .container {
-    max-width: 1600px;
+    max-width: 1728px;
     margin: 0 auto;
     padding: 64px;
 }
@@ -28,7 +28,7 @@ body {
 
 .destinations-grid {
     display: grid;
-    grid-template-columns: 22% 32% 15% 22%;
+    grid-template-columns: 23.5% 32% 15% 23.5%;
     grid-template-rows: repeat(2, 335px);
     grid-template-areas: 
         'v g l l'
@@ -44,7 +44,8 @@ body {
     border-radius: 32px;
     background-repeat: no-repeat;
     background-size: cover;
-    background-color: #6C757D; 
+    background-color: #6C757D;
+    background-position: center;
 }
 
 .destinations-grid__item-link {
@@ -79,7 +80,7 @@ body {
     grid-area: g;
     background-image: 
         linear-gradient(180deg, rgba(0, 0, 0, 0.06) 0%, rgba(0, 0, 0, 0.34) 58.08%, rgba(0, 0, 0, 0.56) 100%), 
-        url('assets/greece.png'); 
+        url('assets/greece.png');
 }
 
 .destinations-grid__item--london {
@@ -117,22 +118,32 @@ body {
         url('assets/amsterdam.png');
 }
 
-@media screen and (max-width: 1300px) {    
+@media screen and (max-width: 1300px) {
     .destinations-grid {
-        grid-template-columns: 20% 32% 20% 20%;
-        grid-template-rows: repeat(2, 275px);
-        gap: 24px;
-    }    
+        grid-template-columns: 32% 23.6% 40.1%;
+        grid-template-rows: repeat(2, 254px) 413px 340px;
+        grid-template-areas: 
+            'g g p'
+            'g g v'
+            'l l l'
+            'a or or'
+        ;
+    }
 }
 
-@media screen and (max-width: 1000px) {    
+
+@media screen and (max-width: 768px) {
+    .container {
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+
     .destinations-grid {
-        grid-template-columns: repeat(2, 50%);
-        grid-template-rows: repeat(4, 275px);
-        grid-template-areas: 
-        'v g '
-        'or g'
-        'l l'
-        'a p';
-    }    
+        display: block;
+    }
+
+    .destinations-grid__item {
+        min-height: 240px;
+        margin-bottom: 22px;
+    }
 }
